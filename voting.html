@@ -3,39 +3,34 @@
 <head>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Drinks</title>
+  <title>Voting Information</title>
 </head>
 <body>
   <div>
     <form>
-      <label for="age">We need to verify that you are over 21 years of age before we can show you the drinks menu. What is your age?</label>
+      <label for="age">We need to verify that you are over 18 years of age before we can show you where to vote. What is your age?</label>
       <input id="age" type="number">
       <button type="submit">Submit!</button>
     </form>
 
-    <div id="drinks" class="hidden">
-      <h1 id="birthday-wish"></h1>
-      <h1>Drink menu</h1>
+    <div id="votingAge" class="hidden">
+      <h1 id="voting age"></h1>
+      <h1>Voting Locations</h1>
 
-      <h2>Beer</h2>
+      <h2>Precincts</h2>
       <ul>
-        <li>The King of Beer</li>
-        <li>The Queen of Beer</li>
-        <li>Real cold beer</li>
-      </ul>
-
-      <h2>Wine</h2>
-      <ul>
-        <li>Red wine</li>
-        <li>White wine</li>
-        <li>Blue wine</li>
+        <li>school 1</li>
+        <li>DMV</li>
+        <li>school 2</li>
+        <a href="https://sos.oregon.gov/elections/Pages/election-information.aspx">Learn about voting</a>
       </ul>
     </div>
 
-    <div id="under-21" class="hidden">
-      <h1>Sorry, we can't serve you.</h1>
+    <div id="underAge" class="hidden">
+      <h1>Sorry, you're too young to vote.</h1>
 
-      <p>It's illegal in the US. Try Mexico or Europe.</p>
+      <p>try again later.</p>
+      <a href="https://sos.oregon.gov/elections/Pages/election-information.aspx">Learn about voting</a>
     </div>
   </div>
 </body>

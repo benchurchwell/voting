@@ -3,20 +3,20 @@ window.onload = function() {
   form.onsubmit = function(event) {
     event.preventDefault();
 
-    let drinkMenu = document.getElementById("drinks");
-    drinkMenu.setAttribute("class", "hidden");
-    let under21Message = document.getElementById("under-21");
-    under21Message.setAttribute("class", "hidden");
+    let voting_Age = document.getElementById("votingAge");
+    voting_Age.setAttribute("class", "hidden");
+    let under_Age = document.getElementById("underAge");
+    under_Age.setAttribute("class", "hidden");
 
     const age = parseInt(document.querySelector("input#age").value);
 
-    if (age > 21) {  // updated to check if age is greater than 21
-      drinkMenu.removeAttribute("class");
-    } else if (age === 21) { // new else if statement
-      window.alert("Have some fun, you’re just 21!");
-      drinkMenu.removeAttribute("class");
+    if (age > 18) {  // updated to check if age is greater than 21
+      voting_Age.removeAttribute("class");
+    } else if (age === 18) { // new else if statement
+      window.alert("Have some fun, you’re just 18!");
+      voting_Age.removeAttribute("class");
     } else {
-      under21Message.removeAttribute("class");
+      under_Age.removeAttribute("class");
     }
   };
 };
